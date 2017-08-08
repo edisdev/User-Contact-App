@@ -1,4 +1,12 @@
 
+
+Project Requirements and Used Technologies
+
+
+-----------------
+
+
+
 Ruby Version  2.2.6
 Rails Version 5.1.3
 
