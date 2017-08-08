@@ -1,0 +1,270 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body{
+background:#111;
+}
+
+.clear{
+clear: both;
+margin-bottom: 2%;
+}
+.title{
+color: #ffbb00;
+font-weight: bold;
+font-variant: small-caps;
+text-align: center;
+}
+
+.titlehr{
+border:2px solid #ffbb00;
+border-radius:50%;
+margin-bottom: 2%;
+}
+
+.table{
+background: #ffbb00;
+color: #000;
+font-weight: bold;
+border-radius:5px;
+
+}
+
+.table tr:not(:last-child){
+border-bottom:2px solid orange;
+}
+
+
+.table a{
+color: darkred;
+padding: 7px
+}
+
+.table a:hover{
+background: orange;
+text-decoration: none;
+}
+
+.users{
+height:auto;
+ color: #ffbb00;
+ font-weight: bold;
+padding:25px;
+margin-bottom: 15px;
+background:#0E1521;
+text-align: center;
+margin-top:2%;
+box-shadow:2px 4px 4px 1px rgba(158, 158, 158, 0.35);
+border: 1px solid #ffbb00;
+}
+
+
+.users h2{
+text-transform: capitalize;
+}
+
+.users a {
+
+padding: 10px;
+background: #ffbb00;
+color: #000;
+font-weight: bold;
+text-decoration: none;
+}
+
+.users a:hover{
+background: #0e1521;
+color: #ffbb00;
+border: 1px solid;
+}
+.users:hover{
+background:#001;
+box-shadow:3px 6px 6px 3px rgba(158, 158, 158, 0.35);
+}
+
+.allhref {
+background: #ffbb00;
+width: 220px;
+height: 44px;
+border-radius: 5px;
+color: #000 !important;
+padding: 17px;
+font-weight: bold;
+font-size:16px;
+border: none;
+}
+
+.allhref i{
+font-size: 20px;
+}
+
+.all-delete{
+
+float: right;
+text-align: center;
+width: 172px;
+height: 60px;
+margin-top:-3%;
+}
+
+.allhref:hover{
+background: orange;
+text-transform: uppercase;
+text-decoration: none;
+transition-duration: .6s;
+}
+
+
+form.new_user{
+padding:30px;
+margin-bottom: 15px;
+background:#0E1521;
+color:#ffbb00;
+text-align: center;
+margin-top:5%;
+box-shadow:2px 4px 4px 1px rgba(158, 158, 158, 0.35);
+}
+
+form.new_user h2{
+font-weight: bold;
+}
+
+form.new_user input[type=text]{
+border: none;
+border-radius:0;
+width: 100%;
+height: 50px;
+color: #000;
+font-weight: bold;
+padding: 10px;
+background: #b2adad;
+}
+
+
+form.new_user input[type=submit]{
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 50px;
+    color: #ffbb00;
+    font-weight: bold;
+    padding: 10px;
+    background: #1f3151;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+
+form.edit_user{
+padding:30px;
+margin-bottom: 15px;
+background:#0E1521;
+color:#ffbb00;
+text-align: center;
+margin-top:10%;
+box-shadow:2px 4px 4px 1px rgba(158, 158, 158, 0.35);
+}
+
+form.edit_user h2{
+font-weight: bold;
+}
+
+form.edit_user input[type=text]{
+border: none;
+border-radius:0;
+width: 100%;
+height: 50px;
+color: #000;
+font-weight: bold;
+padding: 10px;
+background: #b2adad;
+}
+
+
+form.edit_user input[type=submit]{
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    height: 50px;
+    color: #ffbb00;
+    font-weight: bold;
+    padding: 10px;
+    background: #1f3151;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+
+
+form.xml_form{
+height: 394px;
+}
+
+
+form.xml_form .filediv{
+    border-radius: 0;
+    width: 100%;
+    height:55px;
+    color: #ffbb00;
+    font-weight: bold;
+    background: #1f3151;
+    font-variant: small-caps;
+    font-size: 20px;
+  display: block;
+  border: 2px solid;
+    display: inline-block;
+    padding: 12px 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+form.xml_form .filediv i{
+font-size: 25px;
+}
+
+form.xml_form input[type=file]{
+  position: absolute;
+    top: 0;
+    left: 0;
+    opacity:0;
+    cursor: pointer;
+    height: 50px;
+}
+
+
+a.back{
+float: right;
+text-align: center;
+width: 172px;
+height: 60px;
+}
+
+
+.user-info{
+
+margin-top: 10% !important;
+font-size: 20px;
+}
+
+.user-info p{
+
+font-size: 22px;
+}
+
+
+p#notice{
+font-weight: bold;
+}

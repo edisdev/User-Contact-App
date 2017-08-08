@@ -1,0 +1,26 @@
+<h1 class="title">New User</h1>
+<hr class="titlehr">
+   <div class="clear">
+   </div>
+  <div class="col-md-12">
+  	
+  	  <div class="col-md-6">
+    <%= render 'form', user: @user %>
+
+    </div>
+   <div class="col-md-6">
+    <%= form_tag({action: :upload}, multipart: true, :class => 'new_user xml_form',) do %>
+     <h2>Import Users From Xml</h2>
+      <hr style="margin-bottom: 10%">
+     <div class="filediv">
+     	<%= file_field_tag 'xml', :class => 'form-control' %>
+     	<span><i class="glyphicon glyphicon-import"></i> please choose to xml</span>
+     </div>
+    <div class="clear"></div>
+    <%= submit_tag %>
+<% end %>
+
+  </div>
+<div class="col-md-12">
+	 	<%= link_to '<i class="glyphicon glyphicon-circle-arrow-left"></i> Back'.html_safe, users_path , :class =>"allhref back"%>
+</div>

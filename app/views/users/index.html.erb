@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="title">Users</h1>
+<hr class="titlehr">
+
+<div class="col-md-12">
+
+
+<%= link_to 'Add New User',new_user_path, :class =>"allhref" %>  |
+
+<%= form_tag ({ :controller => 'users', :action => 'hepsini_sil' }) do %>
+ <%= submit_tag 'Destroy All', :class => "allhref all-delete" , data: { confirm: 'Are you sure you want delete all of users ? ' } %>
+<% end %>
+</div>
+
+<div class="clear"></div>
+
+    <% @users.each do |user| %>
+    <div class="col-md-5 users">
+       <h2><%= user.name %>
+        <%= user.lname %></h2>
+       <h4> <%= user.phone %> </h4>
+       <hr>
+        <%= link_to 'Show', user %>
+        <%= link_to 'Edit', edit_user_path(user) %>                      
+        <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        </div>
+        <div class="col-md-1"></div>
+    <% end %>
+
+<br>
