@@ -24,7 +24,7 @@
         <%= link_to 'Show', user %>
         <%= link_to 'Edit', edit_user_path(user) %>                      
         <%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-
+        <h6 style="float: right;"><%= time_ago_in_words user.created_at %> ago </h6>
         </div>
         <div class="col-md-1"></div>
     <% end %>
